@@ -1,0 +1,120 @@
+@charset "UTF-8";
+body {
+  font-family: sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 1170px;
+  margin: auto;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 760px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 580px;
+    width: 95%;
+  }
+}
+
+@media (max-width: 567px) {
+  .container {
+    max-width: 550px;
+  }
+}
+
+.button {
+  border-radius: 10px;
+  background-color: #ffd200;
+  border: none;
+  padding: 19px 30px 17px 30px;
+}
+
+/*  Импорт стилей шапки */
+.navbar {
+  padding: 8px 0;
+}
+
+.navbar-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: right;
+  padding-bottom: 3px;
+}
+
+.navbar__address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 13px;
+  margin-bottom: 2px;
+}
+
+.navbar__button {
+  margin-left: 30px;
+  width: 170px;
+  height: 49px;
+  font-size: 13px;
+  padding: 11px 30px 17px 30px;
+}
+
+.navbar__phone {
+  display: inline-block;
+  color: #333333;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  margin-top: 3px;
+}
+
+@media (max-width: 567px) {
+  .navbar {
+    padding: 0;
+  }
+  .navbar__contacts {
+    display: none;
+  }
+  .navbar__button {
+    width: 137px;
+    height: 39px;
+    font-size: 10px;
+    padding: 13px 28px 14px 26px;
+    border-radius: 5px;
+    margin-right: 14px;
+    margin-top: 14px;
+  }
+  .navbar__logo {
+    margin-left: 14px;
+    margin-top: 17px;
+    width: 91px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
