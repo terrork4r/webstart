@@ -55,6 +55,28 @@ img {
   padding: 19px 30px 17px 30px;
 }
 
+.button:hover {
+  background-color: #ffdb33;
+  cursor: pointer;
+}
+
+.section-title {
+  font-size: 24px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  font-size: 16px;
+}
+
+.input {
+  border: 1px solid #dddddd;
+  padding: 22px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
 /*  Импорт стилей шапки */
 .navbar {
   padding: 8px 0;
@@ -138,7 +160,8 @@ img {
 
 /*  Стили для главного экрана */
 .hero {
-  padding: 50px 0;
+  padding-top: 50px;
+  padding-bottom: 40px;
   background-color: #f5f5f5;
 }
 
@@ -182,6 +205,10 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 25px;
+}
+
+.hero-list__item:last-child {
+  margin-bottom: 0;
 }
 
 .hero-list__image {
@@ -238,7 +265,8 @@ img {
 
 @media (max-width: 320px) {
   .hero {
-    padding: 33px 0;
+    padding-top: 33px;
+    padding-bottom: 50px;
   }
   .hero-text__title {
     margin-bottom: 2px;
@@ -265,6 +293,187 @@ img {
   }
   .hero-image {
     margin: 0 18px 0 18px;
+  }
+}
+
+/*  Стили для блока offer */
+.offer {
+  background: url("../img/offer/offer-bg.png") no-repeat;
+  background-position: center right;
+  background-size: contain;
+  padding: 52px 0;
+  position: relative;
+}
+
+.offer:before {
+  content: '';
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+
+.offer * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.offer-block {
+  position: relative;
+  width: 50%;
+  padding-right: 90px;
+}
+
+.offer__title {
+  width: 360px;
+  line-height: 35px;
+  margin-bottom: 24px;
+}
+
+.offer__subtitle {
+  width: 250px;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.offer__input {
+  margin-bottom: 30px;
+  width: 240px;
+}
+
+.offer__input:first-child {
+  margin-right: 10px;
+}
+
+.offer__button {
+  width: 100%;
+  min-height: 70px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.offer__info {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
+}
+
+.offer__text {
+  max-width: 230px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.offer__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  margin-right: 10px;
+}
+
+.offer__phone {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: #333333;
+}
+
+@media (max-width: 1200px) {
+  .offer__input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .offer__button {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer {
+    background: #fff;
+  }
+  .offer-block {
+    width: 100%;
+    padding-right: 0;
+  }
+  .offer__input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .offer {
+    padding-top: 27px;
+    background: #fff;
+    padding-left: 18px;
+  }
+  .offer-block {
+    width: 100%;
+    padding-right: 0;
+  }
+  .offer__input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .offer__button {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    padding-top: 17px;
+    padding-left: 62px;
+    padding-right: 64px;
+  }
+  .offer__title {
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 260px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+  }
+  .offer__subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333;
+  }
+  .offer__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 8px;
+    margin-top: 20px;
+  }
+  .offer__text {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 5px;
+  }
+  .offer__phone {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
   }
 }
 /*# sourceMappingURL=style.css.map */
