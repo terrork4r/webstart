@@ -348,7 +348,8 @@ img {
 }
 
 .offer__input:focus {
-  outline-color: orange;
+  border-color: orange;
+  outline: none;
 }
 
 .offer__button {
