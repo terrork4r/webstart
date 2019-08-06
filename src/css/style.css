@@ -77,6 +77,25 @@ img {
   border-radius: 10px;
 }
 
+.scrollup {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 40px;
+  height: 40px;
+  background: #ffd200 url(../img/arrow-up.svg) no-repeat center;
+  background-size: 30px;
+  border: none;
+  outline: none;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
 /*  Импорт стилей шапки */
 .navbar {
   padding: 8px 0;
@@ -265,7 +284,7 @@ img {
 
 @media (max-width: 320px) {
   .hero {
-    padding-top: 33px;
+    padding-top: 38px;
     padding-bottom: 50px;
   }
   .hero-text__title {
@@ -473,7 +492,7 @@ img {
     font-size: 15px;
     font-weight: 400;
     line-height: 24px;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
   }
   .offer__phone {
     font-size: 15px;
@@ -516,20 +535,5 @@ img {
   position: absolute;
   top: 0;
   right: 0;
-}
-
-#up {
-  display: block;
-  position: fixed;
-  border: 2px solid black;
-  border-radius: 50%;
-  padding: 2px;
-  text-align: center;
-  cursor: pointer;
-}
-
-#up img {
-  width: 20px;
-  height: 20px;
 }
 /*# sourceMappingURL=style.css.map */
