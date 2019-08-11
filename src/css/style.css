@@ -68,6 +68,7 @@ img {
   font-size: 24px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
+  text-align: center;
 }
 
 .section-subtitle {
@@ -91,12 +92,17 @@ img {
   background-size: 30px;
   border: none;
   outline: none;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
   display: none;
+}
+
+.scrollup_active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
+}
+
+.arrows__left:hover, .arrows__right:hover {
   cursor: pointer;
 }
 
@@ -331,7 +337,7 @@ img {
   background: url("../img/offer/offer-bg.png") no-repeat;
   background-position: center right;
   background-size: contain;
-  padding: 52px 0;
+  padding: 52px 0 92px 0;
   position: relative;
 }
 
@@ -360,6 +366,7 @@ img {
   width: 360px;
   line-height: 35px;
   margin-bottom: 24px;
+  text-align: left;
 }
 
 .offer__subtitle {
@@ -433,6 +440,11 @@ img {
   color: #333333;
 }
 
+.offer .success {
+  font-size: 15px;
+  text-align: center;
+}
+
 @media (max-width: 1200px) {
   .offer__input {
     width: 100%;
@@ -457,12 +469,20 @@ img {
   }
 }
 
+@media (max-width: 520px) {
+  .offer__title {
+    width: 100%;
+    font-size: 20px;
+  }
+}
+
 @media (max-width: 320px) {
   .container {
     width: 100%;
   }
   .offer {
     padding-top: 35px;
+    padding-bottom: 50px;
     background: #fff;
     padding-left: 18px;
     padding-right: 23px;
@@ -516,6 +536,80 @@ img {
   }
 }
 
+/*  Стили для окна портфолио */
+.portfolio {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 90px 0;
+  background: #f5f5f5 url("../img/portfolio/portfolio-pattern.jpg") repeat-y center left;
+  background-size: 50%;
+}
+
+.portfolio__title {
+  max-width: 790px;
+  margin: auto;
+  margin-bottom: 90px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 45px;
+}
+
+.portfolio__arrows {
+  max-width: 120px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 68px;
+}
+
+.slider {
+  margin: 0 -15px;
+}
+
+.slider__image {
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .portfolio {
+    background: #f5f5f5;
+  }
+  .portfolio__title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 520px) {
+  .portfolio__title {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.3;
+  }
+}
+
+@media (max-width: 400px) {
+  .slider {
+    width: 246px;
+    height: 186px;
+    margin: auto;
+  }
+  .portfolio {
+    padding: 38px 0;
+  }
+  .portfolio__title {
+    width: 280px;
+    margin-bottom: 38px;
+  }
+  .portfolio__arrows {
+    margin-top: 45px;
+  }
+}
+
 /*  Стили модального окна */
 .modal {
   position: fixed;
@@ -564,5 +658,208 @@ img {
 .modal-column {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+}
+
+/*  Стили блока price */
+.price {
+  padding: 98px 0 125px;
+}
+
+.price * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.price__title {
+  max-width: 515px;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 45px;
+  margin: auto;
+  margin-bottom: 38px;
+}
+
+.price__subtitle {
+  display: block;
+  text-align: center;
+  margin-bottom: 48px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 45px;
+}
+
+.price__card {
+  margin-bottom: 30px;
+}
+
+.card {
+  text-align: center;
+  border: 1px solid #e8e8e8;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.card:hover .card__image:before {
+  opacity: 1;
+}
+
+.card__title {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 45px;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
+  margin-top: 10px;
+  margin-bottom: 17px;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card__text {
+  margin: 25px 0 42px;
+}
+
+.card__image {
+  position: relative;
+}
+
+.card__image:before {
+  content: '';
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  position: absolute;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#ffd200), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to top, #ffd200 0%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.card__img {
+  display: block;
+}
+
+.card__link {
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #333333;
+  position: relative;
+}
+
+.card__link:hover:after {
+  height: 12px;
+}
+
+.card__link:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 3px;
+  background-color: #ffd200;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+/*  Стили блока step */
+.steps * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.step {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  text-align: center;
+  position: relative;
+}
+
+.step:after {
+  content: '';
+  width: 72px;
+  height: 25px;
+  top: -10px;
+  right: -15%;
+  position: absolute;
+  background: url("../img/step/arrow.png");
+}
+
+.step:last-child:after {
+  display: none;
+}
+
+.steps-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.step__title {
+  margin: auto;
+  max-width: 670px;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 45px;
+  margin-bottom: 40px;
+}
+
+.step__subtitle {
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 45px;
+  margin-bottom: 55px;
+}
+
+.step__image {
+  width: 100px;
+  height: 100px;
+  border: 3px solid #ffd200;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  margin-bottom: 27px;
+}
+
+.step__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
 }
 /*# sourceMappingURL=style.css.map */
