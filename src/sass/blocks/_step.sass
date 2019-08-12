@@ -20,7 +20,7 @@
     &s
         &-block
             display: flex
-            justify-content: space-between
+            flex-wrap: wrap
     &__title
         margin: auto
         max-width: 670px
@@ -48,8 +48,50 @@
     &__text
         font-size: 14px
         font-weight: 400
-        line-height: 20px    
-        
+        line-height: 20px 
+@media (max-width: 1200px)
+    .step
+        flex-basis: 50%
+        &:after
+            display: none 
+        &s
+            &-block
+                justify-content: center          
+@media (max-width: 768px)
+    .step
+        margin-bottom: 30px
+        &__title
+            font-size: 24px
+            margin-bottom: 0
+        &__subtitle
+            font-size: 16px
+            margin-bottom: 20px
+        &s
+            &-block
+                flex-direction: column 
+@media (max-width: 400px) 
+    .step
+        margin-bottom: 18px
+        &__title
+            font-size: 18px
+            font-weight: 400
+            line-height: 1.4
+            max-width: 242px
+            margin-bottom: 3px
+        &__subtitle
+            font-size: 14px
+            font-weight: 400
+            line-height: 45px  
+            margin-bottom: 16px 
+        &__image
+            margin-bottom: 21px    
+        &__text
+            font-size: 12px
+            font-weight: 400
+            line-height: 16px
+                 
+
+                  
         
              
              

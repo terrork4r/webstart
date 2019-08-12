@@ -599,7 +599,7 @@ img {
     margin: auto;
   }
   .portfolio {
-    padding: 38px 0;
+    padding: 38px 0 58px;
   }
   .portfolio__title {
     width: 280px;
@@ -785,6 +785,66 @@ img {
   transition: 0.2s;
 }
 
+@media (max-width: 768px) {
+  .price {
+    padding-bottom: 10px;
+  }
+  .price__title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-bottom: 0;
+  }
+  .price__subtitle {
+    font-size: 16px;
+  }
+  .price__card {
+    margin: auto;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .price {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  .price__title {
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 242px;
+    line-height: 1.4;
+    margin-bottom: 2px;
+  }
+  .price__subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 45px;
+  }
+  .price__card {
+    width: 271px;
+    margin-bottom: 30px;
+  }
+}
+
+.card__text {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.card__title {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 45px;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.card__link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
 /*  Стили блока step */
 .steps * {
   -webkit-box-sizing: border-box;
@@ -816,9 +876,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .step__title {
@@ -861,5 +920,67 @@ img {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+}
+
+@media (max-width: 1200px) {
+  .step {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .step:after {
+    display: none;
+  }
+  .steps-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .step {
+    margin-bottom: 30px;
+  }
+  .step__title {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+  .step__subtitle {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .steps-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 400px) {
+  .step {
+    margin-bottom: 18px;
+  }
+  .step__title {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4;
+    max-width: 242px;
+    margin-bottom: 3px;
+  }
+  .step__subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 45px;
+    margin-bottom: 16px;
+  }
+  .step__image {
+    margin-bottom: 21px;
+  }
+  .step__text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

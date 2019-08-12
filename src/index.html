@@ -14,7 +14,7 @@
     <nav class="navbar">
         <div class="container">
             <div class="navbar-block">
-                <div class="navbar__logo">
+                <div class="navbar__logo wow rotateIn" data-wow-delay='0.5s'>
                     <img src="img/logo.png" alt="Логотип">
                 </div>
                 <!-- /.navbar__logo -->
@@ -45,7 +45,7 @@
                             </h1>
                         <span class="hero-text__subtitle">с гарантией качества, прописанной в договоре
                         </span>
-                        <ul class="hero-list">
+                        <ul class="hero-list wow slideInLeft" data-wow-delay='0.5s'>
                            <li class="hero-list__item">
                                 <div class="hero-list__image">
                                     <img src="img/hero/time.png" alt="">
@@ -71,7 +71,7 @@
                            </li>
                         </ul>
                     </div> 
-                    <div class="hero-image">
+                    <div class="hero-image wow slideInRight" data-wow-delay='0.5s'>
                         <img src="img/hero/room.png" alt="">
                     </div>
                 </div>
@@ -154,7 +154,7 @@
                 <span class="section-subtitle price__subtitle">Прайс на наши услуги</span>
                 <!-- /.section-subtitle price__subtitle -->
                 <div class="cards">
-                    <div class="card price__card">
+                    <div class="card price__card wow fadeInUp" data-wow-delay='0.2s'>
                         <div class="card__image"><img class="card__img" src="img/price/room_1.jpg" alt=""></div>
                         <!-- /.card__image -->
                         <div class="card__text">
@@ -166,7 +166,7 @@
                         <!-- /.card__text -->
                     </div>
                     <!-- /.card -->
-                    <div class="card price__card">
+                    <div class="card price__card wow fadeInUp" data-wow-delay='0.4s'>
                         <div class="card__image"><img class="card__img" src="img/price/room_2.jpg" alt=""></div>
                         <!-- /.card__image -->
                         <div class="card__text">
@@ -178,7 +178,7 @@
                         <!-- /.card__text -->
                     </div>
                     <!-- /.card -->
-                    <div class="card price__card">
+                    <div class="card price__card wow fadeInUp" data-wow-delay='0.6s'>
                         <div class="card__image"><img class="card__img" src="img/price/room_3.jpg" alt=""></div>
                         <!-- /.card__image -->
                         <div class="card__text">
@@ -190,7 +190,7 @@
                         <!-- /.card__text -->
                     </div>
                     <!-- /.card -->
-                    <div class="card price__card">
+                    <div class="card price__card wow fadeInUp" data-wow-delay='0.2s'>
                         <div class="card__image"><img class="card__img" src="img/price/room_4.jpg" alt=""></div>
                         <!-- /.card__image -->
                         <div class="card__text">
@@ -202,7 +202,7 @@
                         <!-- /.card__text -->
                     </div>
                     <!-- /.card -->
-                    <div class="card price__card">
+                    <div class="card price__card wow fadeInUp" data-wow-delay='0.4s'>
                         <div class="card__image"><img class="card__img" src="img/price/room_5.jpg" alt=""></div>
                         <!-- /.card__image -->
                         <div class="card__text">
@@ -214,7 +214,7 @@
                         <!-- /.card__text -->
                     </div>
                     <!-- /.card -->
-                    <div class="card price__card">
+                    <div class="card price__card wow fadeInUp" data-wow-delay='0.6s'>
                         <div class="card__image"><img class="card__img" src="img/price/room_6.jpg" alt=""></div>
                         <!-- /.card__image -->
                         <div class="card__text">
@@ -239,7 +239,7 @@
                 <span class="section-subtitle step__subtitle">5 шагов до ремонта</span>
                 <!-- /.section-subtitle step__subtitle -->
                 <div class="steps-block">
-                    <div class="step">
+                    <div class="step wow bounce" data-wow-delay='0.2s'>
                         <div class="step__image">
                             <img src="img/step/woman.svg" alt="">
                         </div>
@@ -250,7 +250,7 @@
                         <!-- /.stap__text -->
                     </div>
                     <!-- /.step -->
-                    <div class="step">
+                    <div class="step wow bounce" data-wow-delay='0.2s'>
                         <div class="step__image">
                             <img src="img/step/wall-clock.svg" alt="">
                         </div>
@@ -261,7 +261,7 @@
                         <!-- /.stap__text -->
                     </div>
                     <!-- /.step -->
-                    <div class="step">
+                    <div class="step wow bounce" data-wow-delay='0.2s'>
                         <div class="step__image">
                             <img src="img/step/money.svg" alt="">
                         </div>
@@ -272,7 +272,7 @@
                         <!-- /.stap__text -->
                     </div>
                     <!-- /.step -->
-                    <div class="step">
+                    <div class="step wow bounce" data-wow-delay='0.2s'>
                         <div class="step__image">
                             <img src="img/step/folded-document.svg" alt="">
                         </div>
@@ -283,7 +283,7 @@
                         <!-- /.stap__text -->
                     </div>
                     <!-- /.step -->
-                    <div class="step">
+                    <div class="step wow bounce" data-wow-delay='0.2s'>
                         <div class="step__image">
                             <img src="img/step/calendar.svg" alt="">
                         </div>
@@ -330,6 +330,10 @@
     <script src="js/script.js"></script>
     <script src="js/modal.js"></script>
     <script src="js/wow.min.js"></script>
+    <script>
+        /*иинициализация библиотеки wow js для анимации*/
+        new WOW().init();
+    </script>
     <script src="js/scroll.js"></script>
 </body>
 </html>
