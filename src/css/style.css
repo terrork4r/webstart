@@ -842,6 +842,10 @@ img {
 }
 
 /*  Стили блока step */
+.steps {
+  padding-bottom: 80px;
+}
+
 .steps * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -957,6 +961,9 @@ img {
   .step {
     margin-bottom: 18px;
   }
+  .steps {
+    padding-bottom: 43px;
+  }
   .step__title {
     font-size: 18px;
     font-weight: 400;
@@ -977,6 +984,41 @@ img {
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
+  }
+}
+
+/*  Стили блока chip */
+.chip {
+  background-color: #ffd200;
+  padding: 60px 0;
+}
+
+.chip__title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 50px;
+}
+
+@media (max-width: 768px) {
+  .chip {
+    padding: 30px;
+  }
+  .chip__title {
+    font-size: 26px;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 400px) {
+  .chip {
+    padding: 55px 0;
+  }
+  .chip__title {
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 230px;
+    margin: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
