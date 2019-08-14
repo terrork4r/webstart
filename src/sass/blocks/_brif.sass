@@ -1,5 +1,5 @@
 .brif
-    padding-top: 100px
+    padding-top: 75px
     padding-bottom: 100px
     *
         box-sizing: border-box
@@ -13,7 +13,7 @@
         flex-basis: 50%
     &__form
         flex-basis: 50%
-        padding-left: 200px
+        padding-left: 170px
         text-align: center
     &__input
         width: 100%
@@ -28,17 +28,18 @@
 .interview
     padding-right: 70px
     &__title
-        margin-bottom: 50px
+        margin-bottom: 30px
         font-size: 22px
         font-weight: 400
-        line-height: 33px  
+        line-height: 33px 
+        min-width: 560px 
         +bold
     &__subtitle
         display: block
         font-size: 16px
         font-weight: 400
         line-height: 45px
-        margin-bottom: 95px 
+        margin-bottom: 82px 
     &-list
         list-style: none
         padding: 0
@@ -47,6 +48,8 @@
             align-items: center
             +bold
             margin-bottom: 25px
+            &:last-child
+                margin-top: 45px
         &__counter
             display: inline-block
             text-align: center
@@ -58,20 +61,23 @@
             margin-right: 30px
             font-size: 14px
         &__text
-            max-width: 400px 
+            max-width: 400px
+            font-size: 18px
+            font-weight: 400 
 .form
     &__title
-        margin-bottom: 50px
+        margin-bottom: 30px
+        margin-top: 20px
         font-size: 22px
         font-weight: 400
-        line-height: 33px  
+        line-height: 33px
         +bold 
     &__subtitle
         display: block
         font-size: 16px
         font-weight: 400
         line-height: 45px
-        margin-bottom: 95px 
+        margin-bottom: 40px 
 @media (max-width: 1200px)
     .brif
         &__form
@@ -79,6 +85,7 @@
     .interview
         padding-right: 30px
         &__title
+            min-width: 350px
             font-size: 20px
             margin-bottom: 15px
         &__subtitle
@@ -89,16 +96,10 @@
                 max-width: 300px
             &__counter
                 margin-right: 20px 
-.form
-    &__title
-        font-size: 20px
-        margin-bottom: 15px
-    &__subtitle
-        margin-bottom: 30px
 @media (max-width: 768px) 
     .brif
         background-image: url('../img/brif/brif-color-bg.jpg'), url('../img/brif/brif-bg.jpg') 
-        background-position: topt center, bottom center
+        background-position: top center, bottom center
         background-size: 100% 50%, cover
         background-repeat: repeat-x, no-repeat 
         &-block
