@@ -1,6 +1,5 @@
 .brif
     padding-top: 75px
-    padding-bottom: 100px
     *
         box-sizing: border-box
     background-image: url('../img/brif/brif-color-bg.jpg'), url('../img/brif/brif-bg.jpg') 
@@ -80,6 +79,10 @@
         margin-bottom: 40px 
 @media (max-width: 1200px)
     .brif
+        background-image: url('../img/brif/brif-color-bg.jpg'), url('../img/brif/brif-bg.jpg') 
+        background-position: left center, right center
+        background-size: 50%, cover
+        background-repeat: repeat-y, no-repeat
         &__form
             padding-left: 30px
     .interview
@@ -98,11 +101,66 @@
                 margin-right: 20px 
 @media (max-width: 768px) 
     .brif
+        padding-top: 30px
         background-image: url('../img/brif/brif-color-bg.jpg'), url('../img/brif/brif-bg.jpg') 
         background-position: top center, bottom center
         background-size: 100% 50%, cover
         background-repeat: repeat-x, no-repeat 
         &-block
-            flex-direction: column       
+            flex-direction: column  
+    .interview
+        margin-bottom: 0px  
+    .form
+        &__title
+            margin-top: 190px  
+        &__description
+            display: block   
+@media (max-width: 400px) 
+    .brif
+        padding-top: 30px
+        background-image: url('../img/brif/brif-color-bg.jpg'), url('../img/brif/brif-bg.jpg') 
+        background-position: top center, bottom center
+        background-size: 100% 45%, cover
+        background-repeat: repeat-x, no-repeat
+        &__input
+            margin-bottom: 15px
+            width: 275px
+        &__button
+            width: 275px    
+    .interview
+        margin-left: 21px
+        &__title
+            display: inline-block
+            font-size: 18px
+            font-weight: 400 
+            line-height: 1.4
+            max-width: 230px
+        &__subtitle
+            font-size: 14px
+            font-weight: 400
+            max-width: 172px 
+            line-height: 1.4
+        &-list
+            &__text
+                max-width: 230px  
+    .form
+        &__title
+            margin-top: 50px 
+            font-size: 18px
+            font-weight: 400
+            line-height: 25.35px
+            margin-bottom: 20px
+        &__subtitle
+            font-size: 14px
+            font-weight: 400
+            line-height: 26.88px
+            margin-bottom: 25px
+        &__description
+            max-width: 160px 
+            font-size: 14px
+            font-weight: 400
+            line-height: 24px  
+            margin: auto
+
 
 
