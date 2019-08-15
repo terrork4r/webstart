@@ -160,7 +160,7 @@
                         <div class="card__text">
                             <h4 class="card__title">Ремонт ванных комнат и с/у</h4>
                             <!-- /.card__title -->
-                            <a href="#" class="card__link">Узнать цены</a>
+                            <a href="#" data-target="bath" class="card__link">Узнать цены</a>
                             <!-- /.card__link -->
                         </div>
                         <!-- /.card__text -->
@@ -172,7 +172,7 @@
                         <div class="card__text">
                             <h4 class="card__title">Ремонт комнат и квартир</h4>
                             <!-- /.card__title -->
-                            <a href="#" class="card__link">Узнать цены</a>
+                            <a href="#" data-target="apartment" class="card__link">Узнать цены</a>
                             <!-- /.card__link -->
                         </div>
                         <!-- /.card__text -->
@@ -184,7 +184,7 @@
                         <div class="card__text">
                             <h4 class="card__title">Отделка офисных помещений</h4>
                             <!-- /.card__title -->
-                            <a href="#" class="card__link">Узнать цены</a>
+                            <a href="#" data-target="office" class="card__link">Узнать цены</a>
                             <!-- /.card__link -->
                         </div>
                         <!-- /.card__text -->
@@ -196,7 +196,7 @@
                         <div class="card__text">
                             <h4 class="card__title">Ремонт в новостройках</h4>
                             <!-- /.card__title -->
-                            <a href="#" class="card__link">Узнать цены</a>
+                            <a href="#" data-target="newbuilding" class="card__link">Узнать цены</a>
                             <!-- /.card__link -->
                         </div>
                         <!-- /.card__text -->
@@ -208,7 +208,7 @@
                         <div class="card__text">
                             <h4 class="card__title">Ремонт кухонь</h4>
                             <!-- /.card__title -->
-                            <a href="#" class="card__link">Узнать цены</a>
+                            <a href="#" data-target="kitchen" class="card__link">Узнать цены</a>
                             <!-- /.card__link -->
                         </div>
                         <!-- /.card__text -->
@@ -220,7 +220,7 @@
                         <div class="card__text">
                             <h4 class="card__title">Ремонт дач и коттеджей</h4>
                             <!-- /.card__title -->
-                            <a href="#" class="card__link">Узнать цены</a>
+                            <a href="#" data-target="country" class="card__link">Узнать цены</a>
                             <!-- /.card__link -->
                         </div>
                         <!-- /.card__text -->
@@ -442,15 +442,18 @@
             <div class="modal-column">
                 <div class="modal-content">Контент</div>
             </div>
-            <div class="modal-column">
+            <div class="modal-column column-1">
                 <h2 class="modal-dialog__title">Узнайте точную стоимость ремонта по телефону!</h2>
                 <span class="modal-dialog__subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
                 <form action="#" class="modal__form" id="modal-form">
                     <input type="text" class="input modal__input" name="username" placeholder="Ваше имя">
                     <input type="tell" class="input modal__input phone" name="userphone" placeholder="Ваш телефон">
                     <button class="button modal__button">Узнать стоимость</button>
-                    <div class="tel modal-tel__return">Или Вы можете перезвонить нам сами по телефону: <span class="our-tel"><a
-                        href="tel:+7(8182)42-51-31">+7 (8182) 42-51-31</a></span>
+                    <div class="tel modal-tel__return">
+                        <span class="tel__text">Или Вы можете перезвонить нам сами по телефону:</span>
+                         <span class="tel__tel">
+                             <a href="tel:+7(8182)42-51-31">+7 (8182) 42-51-31</a>
+                        </span>
                     </div>
                 </form>
             </div>

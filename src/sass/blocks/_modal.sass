@@ -15,8 +15,8 @@
         justify-content: space-between
         align-items: center 
         margin: auto
-        max-width: 450px
-        width: 90%
+        max-width: 1070px
+        width: 100%
         min-width: 200px
         background-color: #fff
         padding: 40px
@@ -24,5 +24,57 @@
             position: absolute
             top: 0
             right: 0
+        &__title
+            text-align: center
+            font-size: 22px
+            font-weight: 400
+            line-height: 33px
+            +bold
+            max-width: 291px
+            margin: auto
+        &__subtitle
+            text-align: center
+            display: block
+            font-size: 16px
+            font-weight: 400
+            line-height: 35px  
+            margin: auto 
+            margin-top: 35px
+            margin-bottom: 45px
+    &__form
+        display: flex
+        flex-direction: column
+        max-width: 400px
+        margin: auto 
+    &__input  
+        margin-bottom: 15px 
+        width: 325px
+    &__button
+        margin-top: 15px
+        height: 70px 
+        margin-bottom: 30px    
+.tel
+    text-align: center
+    &__text
+        display: block
+        margin: auto
+        font-size: 15px
+        font-weight: 400
+        line-height: 20px
+        max-width: 281px
+        text-align: center
+        margin-bottom: 10px
+    &__tel
+        font-size: 24px
+        font-weight: 400
+        line-height: 24px
+        a
+            text-decoration: none
+            color: $text-color
+            +bold  
+.column-1
+    padding-right: 60px 
+    padding-top: 33px                                
     &-column
-        flex-basis: 50%        
+        flex-basis: 50% 
+        padding-right:        
