@@ -732,11 +732,16 @@ img {
 .column-1 {
   padding-right: 60px;
   padding-top: 33px;
+  text-align: center;
 }
 
 .column-1-column {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+}
+
+label {
+  color: red;
 }
 
 /*  Стили блока price */
@@ -1488,5 +1493,33 @@ img {
     line-height: 24px;
     margin: auto;
   }
+}
+
+/*  Стили блока footer */
+.footer {
+  position: relative;
+}
+
+.map {
+  position: absolute;
+  width: 50%;
+  left: 0;
+  top: 0;
+}
+
+.contacts {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-top: 100px;
+  padding-left: 200px;
+}
+
+.contacts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 /*# sourceMappingURL=style.css.map */
