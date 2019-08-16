@@ -114,6 +114,10 @@ a {
   color: #333333;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 /*  Импорт стилей шапки */
 .navbar {
   padding: 8px;
@@ -1437,6 +1441,7 @@ label {
 
 @media (max-width: 400px) {
   .brif {
+    padding-bottom: 30px;
     padding-top: 30px;
     background-image: url("../img/brif/brif-color-bg.jpg"), url("../img/brif/brif-bg.jpg");
     background-position: top center, bottom center;
@@ -1449,6 +1454,7 @@ label {
   }
   .brif__button {
     width: 275px;
+    margin-bottom: 24px;
   }
   .interview {
     margin-left: 21px;
@@ -1572,5 +1578,60 @@ label {
 .contacts-list__text {
   line-height: 1.4;
   margin-top: -4px;
+}
+
+@media (max-width: 1200px) {
+  .contacts {
+    padding-left: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .map {
+    top: 100%;
+    width: 100%;
+  }
+  .contacts {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding-left: 0;
+  }
+  .contacts__title {
+    max-width: 600px;
+    margin-bottom: 50px;
+  }
+  .contacts-list__item {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .contacts {
+    padding-top: 20px;
+    padding-left: 25px;
+  }
+  .contacts__title {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 40px;
+    line-height: 1.4;
+    font-family: 'Museo Sans Bold', sans-serif;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  .contacts-list {
+    margin-left: -5px;
+  }
+  .contacts-list__icon {
+    margin-right: 11px;
+  }
+  .contacts-list__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+  .contacts-list__item:last-child {
+    margin-bottom: 55px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
