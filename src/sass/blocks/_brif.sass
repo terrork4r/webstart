@@ -48,8 +48,11 @@
             align-items: center
             +bold
             margin-bottom: 25px
+            &:nth-child(3)
+                align-items: flex-start
+                margin-top: 33px
             &:last-child
-                margin-top: 45px
+                margin-top: 39px
         &__counter
             display: inline-block
             text-align: center
@@ -58,7 +61,7 @@
             height: 35px
             border: 2px solid #000000 
             border-radius: 50%  
-            margin-right: 30px
+            margin-right: 33px
             font-size: 14px
         &__text
             max-width: 400px
@@ -125,7 +128,7 @@
         background-size: 100% 47%, cover
         background-repeat: repeat-x, no-repeat
         &__input
-            margin-bottom: 15px
+            margin-bottom: 10px
             width: 275px
         &__button
             width: 275px
@@ -152,8 +155,11 @@
             &__counter
                 margin-right: 10px 
             &__item
+                &:nth-child(3)
+                    align-items: flex-start
+                    margin-top: 30px
                 &:last-child
-                    margin-top: 20px         
+                    margin-top: -10px        
     .form
         padding-left: 0
         &__title
@@ -161,12 +167,12 @@
             font-size: 18px
             font-weight: 400
             line-height: 25.35px
-            margin-bottom: 20px
+            margin-bottom: 18px
         &__subtitle
             font-size: 14px
             font-weight: 400
             line-height: 26.88px
-            margin-bottom: 25px
+            margin-bottom: 30px
         &__description
             max-width: 160px 
             font-size: 14px

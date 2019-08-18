@@ -378,14 +378,14 @@ a {
 .offer__title {
   width: 360px;
   line-height: 35px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   text-align: left;
 }
 
 .offer__subtitle {
   width: 250px;
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .offer__input {
@@ -458,16 +458,36 @@ a {
   text-align: center;
 }
 
-.offer-form {
-  position: relative;
+label {
+  margin: auto;
+  text-align: center;
 }
 
-.offer-form #username-error {
-  position: absolute;
-  right: 11px;
+@media (min-width: 1200px) {
+  .offer__form {
+    position: relative;
+  }
+  .offer__form #username-error {
+    position: absolute;
+    display: block;
+    left: 60px;
+    margin-top: -23px;
+  }
+  .offer__form #userphone-error {
+    position: absolute;
+    display: block;
+    left: 270px;
+    margin-top: -23px;
+  }
 }
 
 @media (max-width: 1200px) {
+  .offer {
+    background-size: cover;
+  }
+  .offer__title {
+    width: 300px;
+  }
   .offer__input {
     width: 100%;
     margin-bottom: 10px;
@@ -512,27 +532,29 @@ a {
   .offer-block {
     width: 100%;
     padding-right: 0;
+    padding-left: 2px;
   }
   .offer__input {
     width: 100%;
     margin-bottom: 10px;
+    padding: 23px;
   }
   .offer__button {
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
-    padding-top: 17px;
-    padding-left: 62px;
-    padding-right: 64px;
+    padding-left: 39px;
+    padding-top: auto;
   }
   .offer__title {
     font-size: 18px;
     font-weight: 400;
     max-width: 260px;
     line-height: 1.4;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
   }
   .offer__subtitle {
+    margin-bottom: 25px;
     font-size: 14px;
     font-weight: 400;
     color: #333333;
@@ -919,7 +941,7 @@ label {
     font-weight: 400;
     max-width: 242px;
     line-height: 1.4;
-    margin-bottom: 2px;
+    margin-bottom: 0;
   }
   .price__subtitle {
     font-size: 14px;
@@ -1068,10 +1090,10 @@ label {
 
 @media (max-width: 400px) {
   .step {
-    margin-bottom: 18px;
+    margin-bottom: 15px;
   }
   .steps {
-    padding-bottom: 43px;
+    padding-bottom: 49px;
   }
   .step__title {
     font-size: 18px;
@@ -1087,7 +1109,7 @@ label {
     margin-bottom: 16px;
   }
   .step__image {
-    margin-bottom: 25px;
+    margin-bottom: 27px;
   }
   .step__text {
     font-size: 12px;
@@ -1099,7 +1121,7 @@ label {
 /*  Стили блока chip */
 .chip {
   background-color: #ffd200;
-  padding: 60px 0;
+  padding: 60px 0 65px;
 }
 
 .chip__title {
@@ -1182,6 +1204,10 @@ label {
   margin-bottom: 20px;
 }
 
+.help .paragraph {
+  margin-top: 10px;
+}
+
 @media (max-width: 768px) {
   .help-cards {
     -webkit-box-orient: vertical;
@@ -1200,7 +1226,7 @@ label {
 
 @media (max-width: 400px) {
   .help {
-    padding-top: 60px;
+    padding-top: 55px;
   }
   .help__card {
     width: 275px;
@@ -1213,6 +1239,9 @@ label {
     font-size: 12px;
     font-weight: 400;
     line-height: 17px;
+    margin-bottom: 25px;
+  }
+  .help__text-2 {
     margin-bottom: 15px;
   }
 }
@@ -1282,10 +1311,30 @@ label {
 }
 
 @media (max-width: 400px) {
+  .contrakts {
+    padding-bottom: 45px;
+  }
+  .contrakts-block {
+    padding-left: 0;
+    padding-right: 0;
+  }
   .contrakts__title {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.4;
+    max-width: 280px;
+    margin-top: 65px;
+    margin-bottom: 40px;
+  }
+  .contrakt__image {
+    margin-bottom: 25px;
+  }
+  .contrakt__text {
+    font-size: 14px;
+    font-weight: 400;
+    max-width: 230px;
+    line-height: 1.4;
+    margin-bottom: 40px;
   }
 }
 
@@ -1375,8 +1424,15 @@ label {
   margin-bottom: 25px;
 }
 
+.interview-list__item:nth-child(3) {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 33px;
+}
+
 .interview-list__item:last-child {
-  margin-top: 45px;
+  margin-top: 39px;
 }
 
 .interview-list__counter {
@@ -1387,7 +1443,7 @@ label {
   height: 35px;
   border: 2px solid #000000;
   border-radius: 50%;
-  margin-right: 30px;
+  margin-right: 33px;
   font-size: 14px;
 }
 
@@ -1479,7 +1535,7 @@ label {
     background-repeat: repeat-x, no-repeat;
   }
   .brif__input {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     width: 275px;
   }
   .brif__button {
@@ -1511,8 +1567,14 @@ label {
   .interview-list__counter {
     margin-right: 10px;
   }
+  .interview-list__item:nth-child(3) {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 30px;
+  }
   .interview-list__item:last-child {
-    margin-top: 20px;
+    margin-top: -10px;
   }
   .form {
     padding-left: 0;
@@ -1522,13 +1584,13 @@ label {
     font-size: 18px;
     font-weight: 400;
     line-height: 25.35px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
   .form__subtitle {
     font-size: 14px;
     font-weight: 400;
     line-height: 26.88px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
   }
   .form__description {
     max-width: 160px;
@@ -1568,7 +1630,7 @@ label {
   font-weight: 400;
   line-height: 1.4;
   max-width: 300px;
-  margin-bottom: 100px;
+  margin-bottom: 104px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
@@ -1659,6 +1721,12 @@ label {
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
+  }
+  .contacts-list__item {
+    margin-left: 4px;
+  }
+  .contacts-list__item:first-child {
+    margin-bottom: 34px;
   }
   .contacts-list__item:last-child {
     margin-bottom: 55px;
