@@ -11,7 +11,9 @@
         +bold
     &-block
         display: flex 
-        justify-content: space-around
+        justify-content: space-between
+        padding-left: 40px
+        padding-right: 40px
 
 .contrakt        
     &__text
@@ -30,9 +32,19 @@
         padding-bottom: 30px
         &-block
             flex-direction: column
-            
+        &__title
+            font-size: 24px    
+            margin-top: 20px
+            margin-bottom: 20px     
     .contrakt
         &__text
             margin: auto  
-            margin-bottom: 30px               
+            margin-bottom: 30px 
+@media (max-width: 400px)
+    .contrakts
+        &__title
+            font-size: 18px
+            font-weight: 400 
+            line-height: 1.4
+
  

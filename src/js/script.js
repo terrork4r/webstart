@@ -39,6 +39,7 @@ $(document).ready(function(){
   });
 
   $('#offer-form').validate({
+    errorClass: "offer-invalid",
     rules: {
       username:{
         required: true,
