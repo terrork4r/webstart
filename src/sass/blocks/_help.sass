@@ -4,6 +4,7 @@
         box-sizing: border-box
     &-cards 
         display: flex
+        flex-wrap: wrap
     &__card
         display: flex
         background-color: #f7f7f7  
@@ -23,7 +24,12 @@
         line-height: 23px  
         margin-bottom: 20px 
     .paragraph
-        margin-top: 10px                
+        margin-top: 10px 
+@media (max-width: 1200px) 
+    .help
+        &__card
+            margin: auto
+            margin-bottom: 20px                    
 @media (max-width: 768px) 
     .help
         &-cards

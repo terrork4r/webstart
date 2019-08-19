@@ -7,6 +7,8 @@
     background-color: rgba(#000, 0.5)
     display: flex
     display: none
+    &-content
+        display: none
     &_active
         display: flex
     &-dialog
@@ -15,7 +17,7 @@
         justify-content: space-between
         align-items: center 
         margin: auto
-        max-width: 1070px
+        max-width: 470px
         width: 100%
         min-width: 200px
         background-color: #fff
@@ -75,7 +77,8 @@
 .column-1
     padding-right: 60px 
     padding-top: 33px 
-    text-align: center                               
+    text-align: center
+    flex-basis: 100%                               
     &-column
         flex-basis: 50% 
 

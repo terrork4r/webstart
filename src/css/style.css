@@ -668,6 +668,10 @@ label {
   display: none;
 }
 
+.modal-content {
+  display: none;
+}
+
 .modal_active {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -686,7 +690,7 @@ label {
       -ms-flex-align: center;
           align-items: center;
   margin: auto;
-  max-width: 1070px;
+  max-width: 470px;
   width: 100%;
   min-width: 200px;
   background-color: #fff;
@@ -776,6 +780,8 @@ label {
   padding-right: 60px;
   padding-top: 33px;
   text-align: center;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 
 .column-1-column {
@@ -1171,6 +1177,8 @@ label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .help__card {
@@ -1206,6 +1214,13 @@ label {
 
 .help .paragraph {
   margin-top: 10px;
+}
+
+@media (max-width: 1200px) {
+  .help__card {
+    margin: auto;
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1289,6 +1304,12 @@ label {
   margin-bottom: 40px;
 }
 
+@media (max-width: 1200px) {
+  .contrakt {
+    margin-right: 30px;
+  }
+}
+
 @media (max-width: 768px) {
   .contrakts {
     padding-bottom: 30px;
@@ -1325,6 +1346,9 @@ label {
     max-width: 280px;
     margin-top: 65px;
     margin-bottom: 40px;
+  }
+  .contrakt {
+    margin-right: 0;
   }
   .contrakt__image {
     margin-bottom: 25px;
